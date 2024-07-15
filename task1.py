@@ -5,7 +5,7 @@ def get_days_from_today(date):
     try:
         given_date = datetime.strptime(date, '%Y-%m-%d').date()
     except ValueError:
-        return "Incorect data value. Please use '%Y-%m-%d'."
+        return "Incorrect data value. Please use '%Y-%m-%d'."
     today = datetime.today().date()
     delta = today - given_date
     return delta.days
